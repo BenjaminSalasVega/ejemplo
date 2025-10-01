@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Notificaciones personalizadas (HTML básico)</title>
+</head>
+<body>
+  <h1>Notificaciones personalizadas</h1>
+  <p>Configura tus preferencias para recibir notificaciones de ofertas relevantes en tu canal favorito.</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Preferencias</legend>
+
+      <label for="canal">Canal preferido</label><br>
+      <select id="canal" name="canal" required>
+        <option value="">Selecciona un canal</option>
+        <option>Email</option>
+        <option>WhatsApp</option>
+      </select>
+      <br><br>
+
+      <label>Temas de interés</label><br>
+      <label><input type="checkbox" name="interes" value="tintos"> Vinos tintos</label><br>
+      <label><input type="checkbox" name="interes" value="blancos"> Vinos blancos</label><br>
+      <label><input type="checkbox" name="interes" value="espumantes"> Espumantes</label><br>
+      <br>
+
+      <label for="inicio">Quiet hours (inicio)</label><br>
+      <input type="time" id="inicio" name="inicio"><br><br>
+
+      <label for="fin">Quiet hours (fin)</label><br>
+      <input type="time" id="fin" name="fin"><br><br>
+
+      <label>
+        <input type="checkbox" id="optin" name="optin" required>
+        Confirmo mi suscripción (doble opt-in)
+      </label>
+      <br><br>
+
+      <button type="submit">Guardar preferencias</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+</body>
+</html>

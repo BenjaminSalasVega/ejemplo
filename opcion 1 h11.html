@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard de métricas (HTML básico)</title>
+</head>
+<body>
+  <h1>Dashboard de métricas</h1>
+  <p>KPIs de ventas y clientes. Permite filtrar por rango de fechas y exportar datos </p>
+
+  <form action="#" method="get">
+    <fieldset>
+      <legend>Filtros</legend>
+
+      <label for="desde">Desde</label><br>
+      <input id="desde" name="desde" type="date"><br><br>
+
+      <label for="hasta">Hasta</label><br>
+      <input id="hasta" name="hasta" type="date"><br><br>
+
+      <button type="submit">Aplicar filtro</button>
+      <button type="button">Exportar CSV</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+  <section>
+    <h2>KPIs</h2>
+    <ul>
+      <li>Ticket promedio: $—</li>
+      <li>Recurrencia: —%</li>
+      <li>Ventas por cepa: —</li>
+      <li>Clientes nuevos: —</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <section>
+    <h2>Gráficos</h2>
+    <p>[Gráfico de ventas por fecha]</p>
+    <p>[Gráfico de ticket promedio]</p>
+    <p>[Gráfico de retención / recurrencia]</p>
+  </section>
+
+  <br>
+
+  <section>
+    <h2>Datos </h2>
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Cepa</th>
+          <th>Ventas ($)</th>
+          <th>Clientes únicos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-06-01</td>
+          <td>Cabernet Sauvignon</td>
+          <td>129900</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>2025-06-01</td>
+          <td>Sauvignon Blanc</td>
+          <td>89900</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <br>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Catálogo de vinos – Filtros </title>
+</head>
+<body>
+  <h1>Catálogo de vinos</h1>
+  <p>Filtra por cepa, origen, precio y stock. Se muestran 12 ítems por página con paginación.</p>
+
+  <form action="#" method="get">
+    <fieldset>
+      <legend>Filtros</legend>
+
+      <label for="cepa">Cepa</label><br>
+      <select id="cepa" name="cepa">
+        <option value="">Todas</option>
+        <option>Syrah</option>
+        <option>Cabernet Sauvignon</option>
+        <option>Merlot</option>
+        <option>Pinot Noir</option>
+        <option>Carmenere</option>
+        <option>Sauvignon Blanc</option>
+        <option>Chardonnay</option>
+      </select>
+      <br><br>
+
+      <label for="origen">Origen</label><br>
+      <select id="origen" name="origen">
+        <option value="">Todos</option>
+        <option>Casablanca</option>
+        <option>Maipo</option>
+        <option>Colchagua</option>
+        <option>Maule</option>
+        <option>Aconcagua</option>
+      </select>
+      <br><br>
+
+      <label>Precio</label><br>
+      <label for="min">Mín</label>
+      <input id="min" name="min" type="number" min="0" step="100">
+      <label for="max">Máx</label>
+      <input id="max" name="max" type="number" min="0" step="100">
+      <br><br>
+
+      <label>
+        <input type="checkbox" id="stock" name="stock">
+        Solo productos con stock
+      </label>
+      <br><br>
+
+      <button type="submit">Aplicar filtros</button>
+      <button type="reset">Limpiar filtros</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+  <section>
+    <h2>Resultados</h2>
+    <p>Mostrando 12 ítems. Página 1 de 3.</p>
+
+    <ul>
+      <li>Producto 01 – Pinot Noir · Casablanca · $9.990 · Stock: Sí</li>
+      <li>Producto 02 – Cabernet Sauvignon · Maipo · $12.990 · Stock: Sí</li>
+      <li>Producto 03 – Merlot · Colchagua · $8.990 · Stock: No</li>
+      <li>Producto 04 – Carmenere · Maule · $10.990 · Stock: Sí</li>
+      <li>Producto 05 – Chardonnay · Casablanca · $7.990 · Stock: Sí</li>
+      <li>Producto 06 – Sauvignon Blanc · Aconcagua · $6.990 · Stock: Sí</li>
+      <li>Producto 07 – Syrah · Colchagua · $11.990 · Stock: No</li>
+      <li>Producto 08 – Pinot Noir · Casablanca · $9.490 · Stock: Sí</li>
+      <li>Producto 09 – Merlot · Maule · $8.490 · Stock: Sí</li>
+      <li>Producto 10 – Carmenere · Maipo · $10.490 · Stock: Sí</li>
+      <li>Producto 11 – Chardonnay · Aconcagua · $7.490 · Stock: No</li>
+      <li>Producto 12 – Sauvignon Blanc · Casablanca · $6.490 · Stock: Sí</li>
+    </ul>
+  </section>
+
+  <nav aria-label="Paginación">
+    <a href="#">« Anterior</a>
+    | <strong>1</strong>
+    | <a href="#">2</a>
+    | <a href="#">3</a>
+    | <a href="#">Siguiente »</a>
+  </nav>
+</body>
+</html>

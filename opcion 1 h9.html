@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Integración con marketplace gourmet (HTML básico)</title>
+</head>
+<body>
+  <h1>Integración con marketplace gourmet</h1>
+  <p>Publica productos en el marketplace y sincroniza precio/stock diariamente. Incluye mapeo de categorías y manejo de errores.</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Publicar producto</legend>
+
+      <label for="producto">Producto</label><br>
+      <input id="producto" name="producto" type="text" placeholder="Ej: Gran Reserva 2020" required>
+      <br><br>
+
+      <label for="precio">Precio</label><br>
+      <input id="precio" name="precio" type="number" min="0" step="10" required>
+      <br><br>
+
+      <label for="stock">Stock</label><br>
+      <input id="stock" name="stock" type="number" min="0" required>
+      <br><br>
+
+      <label for="categoria_local">Categoría (sistema local)</label><br>
+      <select id="categoria_local" name="categoria_local">
+        <option>Vinos tintos</option>
+        <option>Vinos blancos</option>
+        <option>Espumantes</option>
+      </select>
+      <br><br>
+
+      <label for="categoria_mkt">Categoría (marketplace)</label><br>
+      <select id="categoria_mkt" name="categoria_mkt">
+        <option>Red Wine</option>
+        <option>White Wine</option>
+        <option>Sparkling</option>
+      </select>
+      <br><br>
+
+      <label for="apikey">Credenciales (API Key)</label><br>
+      <input id="apikey" name="apikey" type="password" placeholder="••••••" required>
+      <br><br>
+
+      <label>
+        <input type="checkbox" id="sync_diaria" name="sync_diaria" checked>
+        Activar sincronización diaria de precios y stock
+      </label>
+      <br><br>
+
+      <button type="submit">Sincronizar ahora</button>
+      <button type="button">Despublicar</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+  <section>
+    <h2>Mapeo de categorías</h2>
+    <ul>
+      <li>Vinos tintos → Red Wine</li>
+      <li>Vinos blancos → White Wine</li>
+      <li>Espumantes → Sparkling</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <section>
+    <h2>Manejo de errores</h2>
+    <p>Ejemplos de mensajes:</p>
+    <ul>
+      <li>Error de conexión: no se pudo contactar el marketplace</li>
+      <li>Error de validación: precio faltante o categoría inválida</li>
+      <li>Credenciales inválidas: verifique su API Key</li>
+    </ul>
+  </section>
+
+  <br>
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Atención multicanal y SLA (HTML básico)</title>
+</head>
+<body>
+  <h1>Atención multicanal y SLA</h1>
+  <p>Contacta a soporte por email, WhatsApp o teléfono. Se aplican tiempos de respuesta (SLA) según el canal.</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Enviar solicitud</legend>
+
+      <label for="canal">Canal preferido</label><br>
+      <select id="canal" name="canal" required>
+        <option value="">Selecciona un canal</option>
+        <option>Email</option>
+        <option>WhatsApp</option>
+        <option>Teléfono</option>
+      </select>
+      <br><br>
+
+      <label for="asunto">Asunto</label><br>
+      <input id="asunto" name="asunto" type="text" placeholder="Ej: duda sobre mi pedido" required>
+      <br><br>
+
+      <label for="detalle">Detalle</label><br>
+      <textarea id="detalle" name="detalle" rows="5" cols="40" placeholder="Describe tu caso"></textarea>
+      <br><br>
+
+      <label for="prioridad">Prioridad del caso</label><br>
+      <select id="prioridad" name="prioridad">
+        <option>Normal</option>
+        <option>Alta – pedido no entregado</option>
+        <option>Alta – error de cobro</option>
+      </select>
+      <br><br>
+
+      <button type="submit">Enviar</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+  <section>
+    <h2>SLA (tiempos de respuesta)</h2>
+    <ul>
+      <li><strong>Email:</strong> 24 horas</li>
+      <li><strong>WhatsApp:</strong> 5 minutos hábiles</li>
+      <li><strong>Teléfono:</strong> Inmediato en horario hábil</li>
+    </ul>
+    <p>Las solicitudes de alta prioridad se enrutan automáticamente al equipo correspondiente.</p>
+  </section>
+
+  <br>
+
+
+</body>
+</html>

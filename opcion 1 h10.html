@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Alianzas con restaurantes (HTML básico)</title>
+</head>
+<body>
+  <h1>Alianzas con restaurantes</h1>
+  <p>Promociones cruzadas con restaurantes aliados. Verifica tu membresía vía QR, canjea beneficios y registra redenciones.</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Verificar y canjear beneficio</legend>
+
+      <label for="resto">Restaurante aliado</label><br>
+      <select id="resto" name="resto" required>
+        <option value="">Selecciona un aliado</option>
+        <option>Resto A</option>
+        <option>Resto B</option>
+        <option>Resto C</option>
+      </select>
+      <br><br>
+
+      <label for="qr">Código QR (texto)</label><br>
+      <input id="qr" name="qr" type="text" placeholder="Ej: GOLD-QR-123" required>
+      <br><br>
+
+      <label for="membresia">Nivel de membresía</label><br>
+      <select id="membresia" name="membresia" required>
+        <option value="">Selecciona nivel</option>
+        <option>Silver</option>
+        <option>Gold</option>
+      </select>
+      <br><br>
+
+      <label>
+        <input type="checkbox" id="vigente" name="vigente" checked>
+        Mi membresía está vigente
+      </label>
+      <br><br>
+
+      <button type="submit">Validar canje</button>
+      <button type="reset">Limpiar</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+  <section>
+    <h2>Reglas</h2>
+    <ul>
+      <li>Gold: 15% de descuento en aliados participantes</li>
+      <li>Se requiere QR válido y membresía vigente</li>
+      <li>Un canje por boleta; no acumulable con otras promos</li>
+      <li>Registros de redención para auditoría y control de fraude</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <section>
+    <h2>Redenciones recientes (ejemplo)</h2>
+    <ul>
+      <li>01/06 – Resto A – QR GOLD-QR-123 – 15% aplicado</li>
+      <li>05/06 – Resto B – QR GOLD-QR-987 – Rechazado (membresía expirada)</li>
+      <li>08/06 – Resto C – QR X1Z9 – Rechazado (QR inválido)</li>
+    </ul>
+  </section>
+
+  <br>
+
+
+</body>
+</html>

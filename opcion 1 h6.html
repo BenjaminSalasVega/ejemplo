@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Seguimiento de pedido (HTML básico)</title>
+</head>
+<body>
+  <h1>Seguimiento de pedido y despacho</h1>
+  <p>Consulta el estado de tu pedido y accede al enlace de seguimiento del courier.</p>
+
+  <form action="#" method="get">
+    <fieldset>
+      <legend>Consultar pedido</legend>
+      <label for="numero">Número de pedido</label><br>
+      <input id="numero" name="numero" type="text" placeholder="#123"><br><br>
+      <button type="submit">Ver estado</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+  <section>
+    <h2>Detalle del pedido</h2>
+    <p><strong>Pedido:</strong> #123</p>
+    <p><strong>Estado actual:</strong> En ruta</p>
+
+    <h3>Estados posibles</h3>
+    <ol>
+      <li>Preparando</li>
+      <li>Despachado</li>
+      <li>En ruta</li>
+      <li>Entregado</li>
+    </ol>
+
+    <h3>Tracking del courier</h3>
+    <p>
+      <a href="#">Ir al seguimiento del courier</a>
+    </p>
+  </section>
+
+  <br>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot de maridaje (HTML básico)</title>
+</head>
+<body>
+  <h1>Chatbot de maridaje</h1>
+  <p>Haz una consulta sobre tu plato y recibe sugerencias de maridaje de vinos.</p>
+
+  <section>
+    <h2>Conversación</h2>
+    <div style="border:1px solid #000; padding:10px; width:300px; height:200px; overflow:auto;">
+      <p><strong>Usuario:</strong> ¿Qué vino con salmón?</p>
+      <p><strong>Chatbot:</strong> Te sugiero <em>Sauvignon Blanc</em>. <button>Agregar al carrito</button></p>
+    </div>
+
+    <form action="#" method="post">
+      <label for="mensaje">Escribe tu mensaje</label><br>
+      <input id="mensaje" name="mensaje" type="text" placeholder="Ej: pollo, pasta..."><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <br>
+
+  <section>
+    <h2>Feedback</h2>
+    <p>¿Fue útil esta recomendación?</p>
+    <label><input type="radio" name="feedback" value="util"> Útil</label>
+    <label><input type="radio" name="feedback" value="no_util"> No útil</label>
+  </section>
+
+  <br>
+
+</body>
+</html>

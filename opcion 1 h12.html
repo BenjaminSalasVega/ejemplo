@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Predicción de demanda </title>
+</head>
+<body>
+  <h1>Predicción de demanda</h1>
+  <p>Carga datos históricos y genera una estimación por cepa/temporada para recomendar stock mínimo y alertar posibles quiebres.</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Parámetros</legend>
+
+      <label for="cepa">Cepa</label><br>
+      <select id="cepa" name="cepa" required>
+        <option value="">Selecciona una cepa</option>
+        <option>Cabernet Sauvignon</option>
+        <option>Sauvignon Blanc</option>
+        <option>Merlot</option>
+        <option>Pinot Noir</option>
+        <option>Carmenere</option>
+      </select>
+      <br><br>
+
+      <label for="mes">Mes/temporada a predecir</label><br>
+      <select id="mes" name="mes" required>
+        <option value="">Selecciona</option>
+        <option>Enero</option>
+        <option>Febrero</option>
+        <option>Marzo</option>
+        <option>Abril</option>
+        <option>Mayo</option>
+        <option>Junio</option>
+        <option>Julio</option>
+        <option>Agosto</option>
+        <option>Septiembre</option>
+        <option>Octubre</option>
+        <option>Noviembre</option>
+        <option>Diciembre</option>
+      </select>
+      <br><br>
+
+      <label for="historico">Histórico (24 meses) – referencia</label><br>
+      <textarea id="historico" name="historico" rows="5" cols="50" placeholder="Ej: 2023-01: 120; 2023-02: 90; ..."></textarea>
+      <br><br>
+
+      <label>
+        <input type="checkbox" id="fiestas" name="fiestas" checked>
+        Considerar estacionalidad (fiestas, navidad)
+      </label>
+      <br><br>
+
+      <button type="submit">Generar predicción</button>
+    </fieldset>
+  </form>
+
+  <br>
+
+  <section>
+    <h2>Resultado</h2>
+    <ul>
+      <li><strong>Demanda estimada:</strong> — unidades</li>
+      <li><strong>Stock mínimo recomendado:</strong> — unidades</li>
+      <li><strong>Observaciones:</strong> ajuste por estacionalidad aplicado</li>
+    </ul>
+  </section>
+
+  <br>
+
+  <!-- Alertas (texto) -->
+  <section>
+    <h2>Alertas</h2>
+    <ul>
+      <li>Si stock proyectado &lt; demanda: crear alerta de reposición prioritaria</li>
+      <li>Si no hay 24 meses de historial: advertencia "Datos insuficientes"</li>
+    </ul>
+  </section>
+
+  <br>
+
+</body>
+</html>

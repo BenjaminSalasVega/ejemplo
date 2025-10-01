@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Registro (HTML básico)</title>
+</head>
+<body>
+  <h1>Registro</h1>
+  <p>Completa los campos para crear tu cuenta. Las preferencias son opcionales.</p>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Datos de acceso</legend>
+
+      <label for="email">Correo electrónico</label><br>
+      <input id="email" name="email" type="email" required><br><br>
+
+      <label for="password">Contraseña</label><br>
+      <input id="password" name="password" type="password" required><br>
+      <small>Sugerencia: usa 8+ caracteres, una mayúscula y un número.</small>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Preferencias (opcional)</legend>
+
+      <label for="cepa">Cepa</label><br>
+      <select id="cepa" name="cepa">
+        <option value="">Sin preferencia</option>
+        <option>Syrah</option>
+        <option>Cabernet Sauvignon</option>
+        <option>Merlot</option>
+        <option>Pinot Noir</option>
+        <option>Carmenere</option>
+        <option>Sauvignon Blanc</option>
+        <option>Chardonnay</option>
+      </select><br><br>
+
+      <label for="anada">Añada</label><br>
+      <select id="anada" name="anada">
+        <option value="">Sin preferencia</option>
+        <option>2025</option>
+        <option>2024</option>
+        <option>2023</option>
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+      </select><br><br>
+
+      <label for="maridaje">Maridaje</label><br>
+      <select id="maridaje" name="maridaje">
+        <option value="">Sin preferencia</option>
+        <option>Carnes rojas</option>
+        <option>Aves</option>
+        <option>Pescados</option>
+        <option>Pastas</option>
+        <option>Quesos</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Privacidad</legend>
+      <label>
+        <input type="checkbox" id="consent" name="consent" required>
+        Acepto la Política de Privacidad
+      </label><br>
+      <label>
+        <input type="checkbox" id="marketing" name="marketing">
+        Deseo recibir comunicaciones de marketing
+      </label>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Crear cuenta</button>
+  </form>
+</body>
+</html>
